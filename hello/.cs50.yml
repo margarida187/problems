@@ -1,7 +1,9 @@
-check50: 
-  files: &check50_files
-    - !exclude "*"
-    - !require hello.c
+#include <cs50.h>
+#include <stdio.h>
 
-submit50:
-  files: *check50_files
+int main(void)
+{
+    string answer = get_string("whats your name?");
+    printf("hello, %s\n", answer);
+}
+
